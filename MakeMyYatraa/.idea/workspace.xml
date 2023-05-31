@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Bus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Bus/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Flight/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Flight/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Holidays/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Holidays/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Train/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Train/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +61,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/MMY Project/MakeMyYatraa",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MMY Project/MakeMyYatraa&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.HotelsApplication">
+}</component>
+  <component name="RunManager" selected="Application.RegistrationServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.APIGateway.ApiGatewayApplication" />
       <module name="APIGateway" />
@@ -133,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HotelsApplication" />
         <item itemvalue="Application.RegistrationServiceApplication" />
+        <item itemvalue="Application.HotelsApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
         <item itemvalue="Application.MaskService" />
@@ -152,6 +158,10 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -164,6 +174,41 @@
           <url>file://$PROJECT_DIR$/Hotels/src/main/java/com/example/Hotels/Controller/HotelController.java</url>
           <line>42</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

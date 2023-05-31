@@ -22,7 +22,6 @@ public class MaskData {
         String data = getJsonString(object);
         Map<String, String> maskMap = new TreeMap<>();
         maskMap.put("email", MaskingCostants.email);
-//        maskMap.put("name1",MaskingCostants.name1);
         maskMap.put("mobNo",MaskingCostants.mobNo);
        return maskJsonResponse(data,maskMap);
     }

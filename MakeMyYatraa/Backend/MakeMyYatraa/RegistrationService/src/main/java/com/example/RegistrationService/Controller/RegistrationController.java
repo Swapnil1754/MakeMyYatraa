@@ -32,7 +32,7 @@ public class RegistrationController {
         this.tokenGenerator = tokenGenerator;
     }
     @PostMapping("/register")
-    public ResponseEntity<?> register(@RequestBody User user) throws IOException {
+    public ResponseEntity<User> register(@RequestBody User user) throws IOException {
 //    User user1 = MaskService.dataMaskFun(user);
         String srtData = MaskData.maskFun(user);
         ObjectMapper objectMapper = new ObjectMapper();
@@ -40,7 +40,7 @@ public class RegistrationController {
 //        Gson gson = new Gson();
 //        User user1 = null;
 //        user1 = gson.fromJson(srtData, User.class);
-        System.out.println(user);
+        System.out.println(user1);
     try {
         responseEntity=new ResponseEntity<>(registrationService.registerUser(user1), HttpStatus.OK);
     }catch (Exception e){
