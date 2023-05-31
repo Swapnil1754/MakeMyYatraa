@@ -12,14 +12,19 @@
     <file url="file://$PROJECT_DIR$/Backend/LoginService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Bus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/EurekaServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/EurekaServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Flight/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Holidays/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/Train/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/MakeMyYatraa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Backend/RegistrationService/src/main/java" charset="UTF-8" />

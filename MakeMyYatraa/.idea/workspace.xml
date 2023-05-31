@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Bus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Bus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Flight/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Flight/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Holidays/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Holidays/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Train/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Train/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Data0" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
