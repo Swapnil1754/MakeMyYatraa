@@ -2,6 +2,8 @@ package com.example.RegistrationService.Service;
 
 import com.example.RegistrationService.Domain.User;
 import com.example.RegistrationService.Encryption.UPISecurity;
+import com.example.RegistrationService.Producer.Producer;
+import com.example.RegistrationService.Rabitmq.Domain.UserDTO;
 import com.example.RegistrationService.Repository.RegistrationRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -26,6 +28,8 @@ import java.util.UUID;
 @Service
 public class RegistrationServiceImpl implements RegistrationService{
     private RegistrationRepository repository;
+    @Autowired
+    private Producer producer;
     UPISecurity upiSecurity = new UPISecurity();
     final SecretKey key = upiSecurity.genrateKey();
 @Autowired
@@ -35,11 +39,25 @@ public class RegistrationServiceImpl implements RegistrationService{
 
     @Override
     public User registerUser(User user) throws Exception {
-    String userId1 = uniqueAlphaNumeric(10);
-    String pass = upiSecurity.encrypt(user.getPassword(),key);
-    user.setUserId(userId1);
-    user.setPassword(pass);
-    return repository.save(user);
+        String userId1 = uniqueAlphaNumeric(10);
+        String pass = upiSecurity.encrypt(user.getPassword(), key);
+        user.setUserId(userId1);
+        user.setPassword(pass);
+        if (!user.isOwner()) {
+            return repository.save(user);
+        } else {
+            UserDTO userDTO = new UserDTO();
+            userDTO.setUserId(user.getUserId());
+            userDTO.setOwner(user.isOwner());
+            userDTO.setEmail(user.getEmail());
+            userDTO.setName1(user.getName1());
+            userDTO.setMobNo(user.getMobNo());
+            userDTO.setPassword(user.getPassword());
+            userDTO.setCity(user.getCity());
+            repository.save(user);
+            producer.sendMessageToRabbitMq(userDTO);
+        }
+        return user;
     }
     @Override
     public User findUser(String userId,String password) throws Exception {
