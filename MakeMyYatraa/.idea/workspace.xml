@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Encryption/UPISecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" afterDir="false" />
@@ -111,19 +111,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaskService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.RegistrationService.Service.MaskService" />
-      <module name="RegistrationService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.RegistrationService.Service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegistrationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.RegistrationService.RegistrationServiceApplication" />
       <module name="RegistrationService" />
@@ -137,13 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UPISecurity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.RegistrationService.Encryption.UPISecurity" />
+      <module name="RegistrationService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.RegistrationService.Encryption.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RegistrationServiceApplication" />
         <item itemvalue="Application.HotelsApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
-        <item itemvalue="Application.MaskService" />
+        <item itemvalue="Application.UPISecurity" />
       </list>
     </recent_temporary>
   </component>
@@ -176,39 +176,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/MaskData.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="18" />
+          <url>jar://$USER_HOME$/.jdks/openjdk-19.0.1/lib/src.zip!/java.base/javax/crypto/Cipher.java</url>
+          <line>1237</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

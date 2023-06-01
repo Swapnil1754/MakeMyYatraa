@@ -50,7 +50,6 @@ public class RegistrationController {
     }
     @PostMapping("/login/{userId}")
     public ResponseEntity<User> login(@PathVariable String userId, @RequestParam(name = "password") String password){
-        System.out.println(password);
     try {
         responseEntity = new ResponseEntity<>(tokenGenerator.generateToken(registrationService.findUser(userId,password)), HttpStatus.ACCEPTED);
     }catch (Exception e){
