@@ -1,6 +1,8 @@
 package com.example.RegistrationService.Controller;
 
 import com.example.RegistrationService.Domain.User;
+import com.example.RegistrationService.Exceptions.UserAlreadyExistsException;
+import com.example.RegistrationService.Exceptions.UserNotFoundException;
 import com.example.RegistrationService.Service.JwtSecurityTokenGenerator;
 import com.example.RegistrationService.Service.MaskData;
 import com.example.RegistrationService.Service.MaskService;
@@ -32,23 +34,27 @@ public class RegistrationController {
         this.tokenGenerator = tokenGenerator;
     }
     @PostMapping("/register")
-    public ResponseEntity<User> register(@RequestBody User user) throws IOException {
+    public ResponseEntity<User> register(@RequestBody User user) throws IOException, UserAlreadyExistsException {
         String srtData = MaskData.maskFun(user);
         ObjectMapper objectMapper = new ObjectMapper();
         User user1 = objectMapper.readValue(srtData,User.class);
         System.out.println(user1);
     try {
         responseEntity=new ResponseEntity<>(registrationService.registerUser(user1), HttpStatus.OK);
-    }catch (Exception e){
+    }catch (UserAlreadyExistsException e) {
+        throw new UserAlreadyExistsException();
+    }catch(Exception e){
         throw new RuntimeException();
     }
     return responseEntity;
     }
     @PostMapping("/login/{userId}")
-    public ResponseEntity<User> login(@PathVariable String userId, @RequestParam(name = "password") String password) {
+    public ResponseEntity<User> login(@PathVariable String userId, @RequestParam(name = "password") String password) throws UserNotFoundException {
     try {
         responseEntity = new ResponseEntity<>(tokenGenerator.generateToken(registrationService.findUser(userId,password)), HttpStatus.ACCEPTED);
-    }catch (Exception e){
+    }catch (UserNotFoundException e){
+        throw new UserNotFoundException();
+    }catch (Exception e) {
         throw new RuntimeException();
     }
     return responseEntity;

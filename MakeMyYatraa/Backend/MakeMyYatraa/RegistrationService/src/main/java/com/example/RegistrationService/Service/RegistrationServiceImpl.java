@@ -2,6 +2,8 @@ package com.example.RegistrationService.Service;
 
 import com.example.RegistrationService.Domain.User;
 import com.example.RegistrationService.Encryption.UPISecurity;
+import com.example.RegistrationService.Exceptions.UserAlreadyExistsException;
+import com.example.RegistrationService.Exceptions.UserNotFoundException;
 import com.example.RegistrationService.Producer.Producer;
 import com.example.RegistrationService.Rabitmq.Domain.UserDTO;
 import com.example.RegistrationService.Repository.RegistrationRepository;
@@ -39,6 +41,9 @@ public class RegistrationServiceImpl implements RegistrationService{
 
     @Override
     public User registerUser(User user) throws Exception {
+    if (repository.findById(user.getUserId()).isPresent()){
+        throw new UserAlreadyExistsException();
+    }
         String userId1 = uniqueAlphaNumeric(10);
         String pass = upiSecurity.encrypt(user.getPassword(), key);
         user.setUserId(userId1);
@@ -57,12 +62,12 @@ public class RegistrationServiceImpl implements RegistrationService{
             repository.save(user);
             producer.sendMessageToRabbitMq(userDTO);
         }
-        return user;
+    return user;
     }
     @Override
     public User findUser(String userId,String password) throws Exception {
     if (repository.findById(userId).isEmpty()) {
-        throw new RuntimeException();
+        throw new UserNotFoundException();
     } else {
         User user = repository.findByUserId(userId);
         String password1 = user.getPassword();
