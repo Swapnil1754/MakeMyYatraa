@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution1">
-      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/src/main/java/com/example/Hotels/Exceptions/HotelAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/src/main/java/com/example/Hotels/Exceptions/HotelNotFoundException.java" afterDir="false" />
+    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" afterDir="false" />
@@ -178,13 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685725228244</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="solution2">
+      <created>1685728888306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685728888306</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="solution" />
     <MESSAGE value="solution1" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution1" />
+    <MESSAGE value="solution2" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
