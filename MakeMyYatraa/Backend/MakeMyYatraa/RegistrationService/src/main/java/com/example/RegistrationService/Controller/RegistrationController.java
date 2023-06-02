@@ -33,13 +33,9 @@ public class RegistrationController {
     }
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody User user) throws IOException {
-//    User user1 = MaskService.dataMaskFun(user);
         String srtData = MaskData.maskFun(user);
         ObjectMapper objectMapper = new ObjectMapper();
         User user1 = objectMapper.readValue(srtData,User.class);
-//        Gson gson = new Gson();
-//        User user1 = null;
-//        user1 = gson.fromJson(srtData, User.class);
         System.out.println(user1);
     try {
         responseEntity=new ResponseEntity<>(registrationService.registerUser(user1), HttpStatus.OK);
@@ -49,7 +45,7 @@ public class RegistrationController {
     return responseEntity;
     }
     @PostMapping("/login/{userId}")
-    public ResponseEntity<User> login(@PathVariable String userId, @RequestParam(name = "password") String password){
+    public ResponseEntity<User> login(@PathVariable String userId, @RequestParam(name = "password") String password) {
     try {
         responseEntity = new ResponseEntity<>(tokenGenerator.generateToken(registrationService.findUser(userId,password)), HttpStatus.ACCEPTED);
     }catch (Exception e){
