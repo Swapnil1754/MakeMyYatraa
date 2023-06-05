@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution2">
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Utils/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Utils/SecurityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/src/main/java/com/example/APIGateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/src/main/java/com/example/APIGateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/EurekaServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/EurekaServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Controller/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Controller/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Repository/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Repository/OwnerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Repository/RegistrationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" afterDir="false" />
@@ -65,17 +84,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MMY Project/MakeMyYatraa&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/MMY Project/MakeMyYatraa",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager" selected="Application.RegistrationServiceApplication">
+}]]></component>
+  <component name="RunManager" selected="Application.OwnerApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.APIGateway.ApiGatewayApplication" />
       <module name="APIGateway" />
@@ -143,8 +163,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RegistrationServiceApplication" />
         <item itemvalue="Application.OwnerApplication" />
+        <item itemvalue="Application.RegistrationServiceApplication" />
         <item itemvalue="Application.HotelsApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
@@ -202,11 +222,6 @@
           <url>file://$PROJECT_DIR$/Hotels/src/main/java/com/example/Hotels/Controller/HotelController.java</url>
           <line>42</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.jdks/openjdk-19.0.1/lib/src.zip!/java.base/javax/crypto/Cipher.java</url>
-          <line>1237</line>
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

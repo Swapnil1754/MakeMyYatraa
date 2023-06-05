@@ -13,12 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 import java.io.IOException;
 
@@ -51,7 +53,7 @@ public class RegistrationController {
     @PostMapping("/login/{userId}")
     public ResponseEntity<User> login(@PathVariable String userId, @RequestParam(name = "password") String password) throws UserNotFoundException {
     try {
-        responseEntity = new ResponseEntity<>(tokenGenerator.generateToken(registrationService.findUser(userId,password)), HttpStatus.ACCEPTED);
+        responseEntity = new ResponseEntity<>(tokenGenerator.generateToken(registrationService.findUser(userId,password)), HttpStatus.OK);
     }catch (UserNotFoundException e){
         throw new UserNotFoundException();
     }catch (Exception e) {
@@ -59,4 +61,5 @@ public class RegistrationController {
     }
     return responseEntity;
     }
+
 }

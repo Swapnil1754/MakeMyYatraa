@@ -33,4 +33,5 @@ public class User {
     private String mobNo;
     private String password;
     private String city;
+
 }

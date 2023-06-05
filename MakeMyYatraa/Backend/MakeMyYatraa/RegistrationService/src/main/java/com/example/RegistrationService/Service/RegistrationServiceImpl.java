@@ -7,28 +7,15 @@ import com.example.RegistrationService.Exceptions.UserNotFoundException;
 import com.example.RegistrationService.Producer.Producer;
 import com.example.RegistrationService.Rabitmq.Domain.UserDTO;
 import com.example.RegistrationService.Repository.RegistrationRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
-import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
-import java.util.Objects;
-import java.util.Optional;
 import java.util.UUID;
 @Service
-public class RegistrationServiceImpl implements RegistrationService{
+public class RegistrationServiceImpl implements RegistrationService {
     private RegistrationRepository repository;
     @Autowired
     private Producer producer;
@@ -41,13 +28,13 @@ public class RegistrationServiceImpl implements RegistrationService{
 
     @Override
     public User registerUser(User user) throws Exception {
-    if (repository.findById(user.getUserId()).isPresent()){
-        throw new UserAlreadyExistsException();
-    }
         String userId1 = uniqueAlphaNumeric(10);
         String pass = upiSecurity.encrypt(user.getPassword(), key);
         user.setUserId(userId1);
         user.setPassword(pass);
+    if (repository.findById(user.getUserId()).isPresent()){
+        throw new UserAlreadyExistsException();
+    }
         if (!user.isOwner()) {
             return repository.save(user);
         } else {
@@ -78,6 +65,14 @@ public class RegistrationServiceImpl implements RegistrationService{
         }else
         return null;
         }
+    }
+
+    @Override
+    public User fetchUser(String userId) throws UserNotFoundException {
+        if (repository.findById(userId).isEmpty()) {
+            throw new UserNotFoundException();
+        }
+        return repository.findById(userId).get();
     }
     private String alphaNumericRandom(int length) {
         final String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
