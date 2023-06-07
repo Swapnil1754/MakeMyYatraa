@@ -35,20 +35,17 @@ public class RegistrationServiceImpl implements RegistrationService {
     if (repository.findById(user.getUserId()).isPresent()){
         throw new UserAlreadyExistsException();
     }
-        if (!user.isOwner()) {
-            return repository.save(user);
-        } else {
-            UserDTO userDTO = new UserDTO();
-            userDTO.setUserId(user.getUserId());
-            userDTO.setOwner(user.isOwner());
-            userDTO.setEmail(user.getEmail());
-            userDTO.setName1(user.getName1());
-            userDTO.setMobNo(user.getMobNo());
-            userDTO.setPassword(user.getPassword());
-            userDTO.setCity(user.getCity());
+        UserDTO userDTO = new UserDTO();
+        userDTO.setUserId(user.getUserId());
+        userDTO.setOwner(user.isOwner());
+        userDTO.setActivated(user.isActivated());
+        userDTO.setEmail(user.getEmail());
+        userDTO.setName1(user.getName1());
+        userDTO.setMobNo(user.getMobNo());
+        userDTO.setPassword(user.getPassword());
+        userDTO.setCity(user.getCity());
             repository.save(user);
             producer.sendMessageToRabbitMq(userDTO);
-        }
     return user;
     }
     @Override

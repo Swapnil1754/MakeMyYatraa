@@ -9,10 +9,13 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
+@Primary
 public class ProducerConfig {
     private String exchangeName = "data_exchange";
+    private String exchangeName2 = "data_exchange2";
     private String queueName = "my_queue";
     @Bean
     public DirectExchange directExchange() {

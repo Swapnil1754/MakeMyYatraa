@@ -12,18 +12,22 @@
         <module name="Bus" />
         <module name="Holidays" />
         <module name="Owner" />
+        <module name="CustomerService" />
         <module name="Flight" />
         <module name="APIGateway" />
         <module name="RegistrationService" />
         <module name="Train" />
-        <module name="LoginService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LoginService" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="APIGateway" options="-parameters" />
       <module name="Bus" options="-parameters" />
+      <module name="CustomerService" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
       <module name="Flight" options="-parameters" />
       <module name="Holidays" options="-parameters" />

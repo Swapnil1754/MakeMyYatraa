@@ -1,6 +1,7 @@
 package com.example.Owner.Service;
 
 import com.example.Owner.Domain.User;
+import com.example.Owner.Repository.CustomerRepository;
 import com.example.Owner.Repository.OwnerRepository;
 import com.example.Owner.Utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +12,24 @@ import reactor.core.publisher.Mono;
 public class OwnerServiceImpl implements OwnerService{
     @Autowired
     private OwnerRepository repository;
+    @Autowired
+    private CustomerRepository customerRepository;
     @Override
     public User saveUser(User user) {
-//        if (repository.findOneByUserId(user.getUserId()).block().) {
-//            throw new RuntimeException("User Already Exists...!!!");
-//        } else {
+        if (user.isOwner()) {
             return repository.save(user).block();
-//        }
+        }
+        com.example.Owner.Domain.Customers.User user1 = new com.example.Owner.Domain.Customers.User();
+        user1.setUserId(user.getUserId());
+        user1.setOwner(user.isOwner());
+        user1.setName1(user.getName1());
+        user1.setEmail(user.getEmail());
+        user1.setActivated(user.isActivated());
+        user1.setPassword(user.getPassword());
+        user1.setMobNo(user.getMobNo());
+        user1.setCity(user.getCity());
+         customerRepository.save(user1);
+         return user;
     }
 
     @Override

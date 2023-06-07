@@ -14,12 +14,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Document(collection = "Customers")
+@Document(collection = "Owners")
 public class User {
     @Id
     private String userId;
-
+    @Transient
     private boolean isOwner;
+    private boolean isActivated;
     private String email;
     private String name1;
     private String mobNo;

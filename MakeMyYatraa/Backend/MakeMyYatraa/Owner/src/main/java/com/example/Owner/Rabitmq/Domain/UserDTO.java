@@ -14,6 +14,7 @@ import lombok.ToString;
 @ToString
 public class UserDTO {
     private String userId;
+    private boolean isActivated;
     private boolean isOwner;
     private String email;
     private String name1;

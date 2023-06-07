@@ -28,6 +28,8 @@ public class User {
     private String userId;
     @JsonProperty("isOwner")
     private boolean isOwner;
+    @JsonProperty("isActivated")
+    private boolean isActivated;
     private String email;
     private String name1;
     private String mobNo;

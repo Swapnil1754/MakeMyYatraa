@@ -16,7 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<modules>
 		<module>RegistrationService</module>
-		<module>LoginService</module>
+		<module>CustomerService</module>
 		<module>EurekaServer</module>
 		<module>APIGateway</module>
 		<module>Hotels</module>

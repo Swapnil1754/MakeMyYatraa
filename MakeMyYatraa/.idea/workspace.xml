@@ -4,37 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution2">
-      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Utils/SecurityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Utils/SecurityUtils.java" afterDir="false" />
+    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Consumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Consumer/ConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/RabbitMq/Domain/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/Service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Domain/Customers/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Producer/Producer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Producer/Producer2Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/src/main/java/com/example/APIGateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/APIGateway/src/main/java/com/example/APIGateway/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/EurekaServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/EurekaServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Hotels/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/src/main/java/com/example/LoginService/LoginServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/java/com/example/CustomerService/CustomerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/LoginService/src/test/java/com/example/LoginService/LoginServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/CustomerService/src/test/java/com/example/CustomerService/LoginServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Controller/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Controller/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Consumer/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Repository/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Repository/OwnerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Rabitmq/Domain/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Rabitmq/Domain/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/Owner/src/main/java/com/example/Owner/Service/OwnerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Repository/RegistrationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Producer/ProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Producer/ProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Rabitmq/Domain/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Rabitmq/Domain/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Data0/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Data0/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -88,6 +93,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/MMY Project/MakeMyYatraa",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -95,7 +101,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.OwnerApplication">
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.APIGateway.ApiGatewayApplication" />
       <module name="APIGateway" />
@@ -109,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.EurekaServer.EurekaServerApplication" />
-      <module name="EurekaServer" />
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.CustomerService.CustomerServiceApplication" />
+      <module name="CustomerService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.EurekaServer.*" />
+          <option name="PATTERN" value="com.example.CustomerService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Hotels.HotelsApplication" />
-      <module name="Hotels" />
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.EurekaServer.EurekaServerApplication" />
+      <module name="EurekaServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Hotels.*" />
+          <option name="PATTERN" value="com.example.EurekaServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,9 +171,9 @@
       <list>
         <item itemvalue="Application.OwnerApplication" />
         <item itemvalue="Application.RegistrationServiceApplication" />
-        <item itemvalue="Application.HotelsApplication" />
-        <item itemvalue="Application.EurekaServerApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.CustomerServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -201,14 +207,32 @@
       <option name="project" value="LOCAL" />
       <updated>1685728888306</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="solution">
+      <created>1685977927475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685977927475</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="solution" />
     <MESSAGE value="solution1" />
     <MESSAGE value="solution2" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution2" />
+    <MESSAGE value="solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

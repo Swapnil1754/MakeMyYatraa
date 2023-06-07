@@ -16,6 +16,7 @@ import org.springframework.data.annotation.Transient;
 public class UserDTO {
     private String userId;
     private boolean isOwner;
+    private boolean isActivated;
     private String email;
     private String name1;
     private String mobNo;

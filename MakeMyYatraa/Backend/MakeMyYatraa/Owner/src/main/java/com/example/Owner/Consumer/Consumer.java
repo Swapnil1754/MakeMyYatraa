@@ -14,7 +14,9 @@ public class Consumer {
     @RabbitListener(queues = "my_queue")
     public void getDataFromRabbit(UserDTO userDTO) {
         User user = new User();
+        com.example.Owner.Domain.Customers.User user1 = new com.example.Owner.Domain.Customers.User();
         user.setUserId(userDTO.getUserId());
+        user.setActivated(userDTO.isActivated());
         user.setOwner(userDTO.isOwner());
         user.setEmail(userDTO.getEmail());
         user.setName1(userDTO.getName1());
