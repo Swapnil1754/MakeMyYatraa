@@ -9,11 +9,12 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 @Service
-public class OwnerServiceImpl implements OwnerService{
+public class OwnerServiceImpl implements OwnerService {
     @Autowired
     private OwnerRepository repository;
     @Autowired
     private CustomerRepository customerRepository;
+
     @Override
     public User saveUser(User user) {
         if (user.isOwner()) {
@@ -28,12 +29,26 @@ public class OwnerServiceImpl implements OwnerService{
         user1.setPassword(user.getPassword());
         user1.setMobNo(user.getMobNo());
         user1.setCity(user.getCity());
-         customerRepository.save(user1);
-         return user;
+        customerRepository.save(user1);
+        return user;
     }
 
     @Override
     public Mono<User> getUserWithAuthorities() {
         return SecurityUtils.getCurrentUserLogin().flatMap(repository::findOneByUserId);
+    }
+
+    @Override
+    public Mono<User> activateRegistration(String key) {
+        return repository.findOneByActivationKey(key).flatMap(user -> {
+            com.example.Owner.Domain.Customers.User user1 = customerRepository.findByUserId(user.getUserId());
+            user.setActivated(true);
+            user.setActivationKey(null);
+            if (user1 != null) {
+                customerRepository.save(user1);
+            }
+            saveUser(user);
+            return null;
+        });
     }
 }

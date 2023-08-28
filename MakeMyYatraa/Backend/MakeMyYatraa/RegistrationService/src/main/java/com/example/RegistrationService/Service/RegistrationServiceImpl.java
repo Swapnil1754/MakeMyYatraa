@@ -7,12 +7,15 @@ import com.example.RegistrationService.Exceptions.UserNotFoundException;
 import com.example.RegistrationService.Producer.Producer;
 import com.example.RegistrationService.Rabitmq.Domain.UserDTO;
 import com.example.RegistrationService.Repository.RegistrationRepository;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.Base64;
 import java.util.UUID;
 @Service
 public class RegistrationServiceImpl implements RegistrationService {
@@ -71,6 +74,34 @@ public class RegistrationServiceImpl implements RegistrationService {
         }
         return repository.findById(userId).get();
     }
+
+    @Override
+    public User getUserByEmail(String token) throws UserNotFoundException, JsonProcessingException {
+    String email = getEmail(token);
+        System.out.println("here "+email);
+        User user = repository.findByEmail(email);
+        if (user!=null) {
+            return user;
+        }else {
+            throw new UserNotFoundException();
+        }
+    }
+
+    @Override
+    public User getUserByName(String name) throws UserNotFoundException {
+        User user = repository.findByName1(name);
+        if (user!=null){
+            return user;
+        }
+        throw new UserNotFoundException();
+    }
+
+    private static String getEmail(String token) throws JsonProcessingException {
+    String payLoad = token.split("\\.")[1];
+    String emailId = new ObjectMapper().readTree(new String(Base64.getDecoder().decode(payLoad))).get("email").asText();
+    return emailId;
+    }
+
     private String alphaNumericRandom(int length) {
         final String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         StringBuilder stringBuilder = new StringBuilder(length);

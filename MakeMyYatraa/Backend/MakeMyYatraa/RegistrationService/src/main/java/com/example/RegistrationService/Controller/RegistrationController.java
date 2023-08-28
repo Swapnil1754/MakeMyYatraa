@@ -7,12 +7,11 @@ import com.example.RegistrationService.Service.JwtSecurityTokenGenerator;
 import com.example.RegistrationService.Service.MaskData;
 import com.example.RegistrationService.Service.MaskService;
 import com.example.RegistrationService.Service.RegistrationService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
 
 import java.io.IOException;
 
@@ -60,6 +58,18 @@ public class RegistrationController {
         throw new RuntimeException();
     }
     return responseEntity;
+    }
+    @GetMapping("/fetch/{userId}")
+    public ResponseEntity<User> fetchUser(@PathVariable String userId) throws UserNotFoundException {
+        return new ResponseEntity<>(registrationService.fetchUser(userId), HttpStatus.OK);
+    }
+    @GetMapping(path = "/google")
+    public ResponseEntity<User> getUserByEmailId(@RequestParam String token) throws UserNotFoundException, JsonProcessingException {
+    return new ResponseEntity<>(registrationService.getUserByEmail(token), HttpStatus.OK);
+    }
+    @GetMapping(path = "/facebook")
+    public ResponseEntity<User> getUserByName(@RequestParam String name) throws UserNotFoundException {
+    return new ResponseEntity<>(registrationService.getUserByName(name), HttpStatus.OK);
     }
 
 }

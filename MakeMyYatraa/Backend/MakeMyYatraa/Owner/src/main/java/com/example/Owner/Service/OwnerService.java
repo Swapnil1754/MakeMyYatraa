@@ -6,4 +6,5 @@ import reactor.core.publisher.Mono;
 public interface OwnerService {
     public User saveUser(User user);
     public Mono<User> getUserWithAuthorities();
+    public Mono<User> activateRegistration(String key);
 }
