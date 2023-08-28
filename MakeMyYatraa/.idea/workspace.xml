@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/MakeMyYatraa/RegistrationService/src/main/java/com/example/RegistrationService/Service/RegistrationServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="1b14e168-5c68-44d1-8bd0-0119368e5643" name="Changes" comment="solution" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
