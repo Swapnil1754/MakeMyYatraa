@@ -90,7 +90,7 @@ public class RegistrationServiceImpl implements RegistrationService {
     @Override
     public User getUserByName(String name) throws UserNotFoundException {
         User user = repository.findByName1(name);
-        if (user!=null){
+        if (user != null) {
             return user;
         }
         throw new UserNotFoundException();
